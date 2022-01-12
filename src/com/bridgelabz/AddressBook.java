@@ -14,33 +14,33 @@ public class AddressBook {
     public void addNewContact() {
         System.out.println("Enter the Contact Details -");
         System.out.println("Enter the First Name :");
-        contacts.setFirstName(sc.nextLine());
+        contacts.setFirstName(sc.next());
         System.out.println("Enter the Last Name :");
-        contacts.setLastname(sc.nextLine());
+        contacts.setLastname(sc.next());
         System.out.println("Enter the Address :");
-        contacts.setAddress(sc.nextLine());
+        contacts.setAddress(sc.next());
         System.out.println("Enter the City :");
-        contacts.setCity(sc.nextLine());
+        contacts.setCity(sc.next());
         System.out.println("Enter the State :");
-        contacts.setState(sc.nextLine());
+        contacts.setState(sc.next());
         System.out.println("Enter the Zip Code :");
-        contacts.setZip(sc.nextLine());
+        contacts.setZip(sc.next());
         System.out.println("Enter the Phone Number :");
-        contacts.setPhoneNo(sc.nextLine());
+        contacts.setPhoneNo(sc.next());
         System.out.println("Enter the EMail ID :");
-        contacts.setEmailID(sc.nextLine());
+        contacts.setEmailID(sc.next());
     }
 
-    //Method to Shopw the Contact Details
-    public void showContact() {
+    //Method to Show the Contact Details
+    public void displayContact() {
         System.out.println("Contact Details -");
         System.out.println("First Name : "+contacts.getFirstName());
         System.out.println("Last Name : "+contacts.getLastname());
         System.out.println("Address : "+contacts.getAddress());
         System.out.println("City : "+contacts.getCity());
         System.out.println("State : "+contacts.getState());
-        System.out.println("Zip Code :"+contacts.getZip());
-        System.out.println("Phone Number :"+contacts.getPhoneNo());
+        System.out.println("Zip Code : "+contacts.getZip());
+        System.out.println("Phone Number : "+contacts.getPhoneNo());
         System.out.println("EMail ID : "+contacts.getEmailID());
     }
 }
